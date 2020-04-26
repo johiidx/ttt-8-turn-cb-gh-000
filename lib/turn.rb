@@ -6,8 +6,6 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-display_board(board)
-
 def valid_move?(board, index)
   if !position_taken?(board, index) && (index).between?(0,8)
     return true
